@@ -54,7 +54,7 @@ client.on("message", async function(msg) {
                 msg.channel.send(value).catch(() => {})
             })
         } else {
-			msg.channel.send(msg.content)
+			msg.channel.send(msg.content.replace(/vsauce/gm,""))
         }
         if (msg.author.id != client.user.id) {
             text += msg.content
