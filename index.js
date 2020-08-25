@@ -54,9 +54,7 @@ client.on("message", async function(msg) {
                 msg.channel.send(value).catch(() => {})
             })
         } else {
-            if (chunks.length <= 0) {
-                msg.channel.send(msg.content)
-            }
+			msg.channel.send(msg.content)
         }
         if (msg.author.id != client.user.id) {
             text += msg.content
